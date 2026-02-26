@@ -63,11 +63,11 @@ const fetchWarrantyData = async (sn) => {
     fetchWarrantyData(serialNumber);
   };
 
-  const formatDate = (dateString) => {
-    if (!dateString) return "N/A";
-    const options = { year: 'numeric', month: 'short', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString('en-GB', options);
-  };
+  // const formatDate = (dateString) => {
+  //   if (!dateString) return "N/A";
+  //   const options = { year: 'numeric', month: 'short', day: 'numeric' };
+  //   return new Date(dateString).toLocaleDateString('en-GB', options);
+  // };
 
   return (
     <div className="page-wrapper">
