@@ -121,7 +121,7 @@ const Auth = () => {
         
         // Check if user exists - adjust based on your flow's response
         // Your flow should return an array of users if found
-        if (result && Array.isArray(result) && result.length > 0 && result[0].contoso_emailid) {
+        if (result && Array.isArray(result) && result.length > 0 && result[0].EmailID) {
           // Success: Store authentication status and user data
           localStorage.setItem('isAuthenticated', 'true');
           localStorage.setItem('user', JSON.stringify(result[0]));
